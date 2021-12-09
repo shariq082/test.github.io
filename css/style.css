@@ -128,13 +128,14 @@ overflow-y: hidden;
     top: 0;
     left: 0;
     width: 100%;
-    height: 650px;
     z-index: 50000;
    display: none;
+   padding-bottom: 50px;
 }
 .hideshow h1{
-    font-size: 50px;
+    font-size: 70px;
     color: var(--red);
+    margin-bottom: 50px;
 }
 .hide{
     display: flex;
@@ -146,8 +147,18 @@ overflow-y: hidden;
     font-weight: bold;
     cursor:pointer;
 }
+.hidden{
+      display: none;
+}
+.hide-heading{
+    font-size: 30px;
+    color: var(--red);
+    margin-left: 20px;
+    
+}
 .hide-content{
     display: flex; justify-content: space-between;
+    width:50%; margin: 0 auto;
 }
 .hide-content .hide-left, .hide-content .hide-right{
     list-style: none;
@@ -155,9 +166,7 @@ overflow-y: hidden;
 .hide-content .hide-left li, .hide-content .hide-right li{
     margin-top: 30px;
 }
-.hide-content{width:40%;
-     margin: 0 auto;
-}
+
 .hide-form{
     width: 100%;
 }
@@ -178,8 +187,9 @@ overflow-y: hidden;
 .text-dark{
     position: absolute;
     top: 15px;
-    right: 15px;
+    right: 30%;
     font-size: 12px;
+    color: var(--red)!important;
 }
 .btn-red button{
     background: var(--red);
@@ -188,6 +198,20 @@ overflow-y: hidden;
     width: 100%;
     border:none;
     border-radius: 0 0 20px 0;
+}
+.hide-content .hide-left, .hide-content .hide-right{
+    width: 48%;
+}
+.hide-content li{
+    width: 98%;
+    font-weight: bold;
+}
+.pos-red{
+    position: relative;
+}
+.pos-left{
+    position: absolute;
+    right: 0;
 }
 /*----------------accordian----------------------*/
 
@@ -206,7 +230,7 @@ overflow-y: hidden;
     bottom: -20px;
 }
 .abt-left h5{
-    color: #D83638;
+    color: var(--red);
 }
 .card .card-img-top{border-radius:30px 0 0 0 !important;
 }
@@ -491,11 +515,21 @@ hr{
   .owl-nav button:focus {
       outline: none;
   }
-
+  .bt-red button {
+    background: var(--red);
+    color: var(--white);
+    padding: 15px;
+    width:50%;
+    border: none;
+    border-radius: 20px 0 20px 0;
+}
+.red{
+    color: var(--red);
+}
+.rgt-ico{
+    color: var(--red);
+}
 /*--------------------responsive-----------------------*/
-
-
-
 @media(max-width:1024px){
     .header{
         height: 570px;
@@ -510,8 +544,20 @@ hr{
     .card-cont h5, .extra .card-cont h5{
         font-size: 12px;
     }
+    .text-dark{
+        right: 5%;
+    }
+    .bt-red button{
+        width: 100%;
+    }
+    .hideshow h1{
+        font-size: 45px;
+    }
 }
 @media(max-width:768px){
+    .hide-content {  
+        width: 70%;   
+    }
     .heading p {
         font-size: 30px;
     }
@@ -537,11 +583,43 @@ hr{
     .card-cont h5, .extra .card-cont h5{
         font-size: 12px;
     }
+    
+    .hideshow h1{
+        font-size: 45px;
+    }
+    .text-dark{
+        right: 10%;
+    }
+    .bt-red button{
+        width: 100%;
+    }
 }
 
 @media(max-width:576px){
-    .hideshow{visibility:hidden}
+    .bt-red button {
+        width: 40%;
+    }
+    .hidden{display: block; display: flex;justify-content: space-between; align-items: center;}
+    .hide-one{display: none;}
+    .hide-small{display: none;}
     .header{height: 300px;}
+    .hide-content .hide-left, .hide-content .hide-right{
+        width: 100%;
+    }
+    .hide-content{
+        display: flex;
+      flex-wrap: wrap; 
+        width:100%; margin: 0 auto;
+        height: 200px;
+        overflow: scroll;
+    }
+    .pos-left{
+        position: absolute;
+        right: 30px;
+    }
+    .hide-content .hide-left li, .hide-content .hide-right li{
+        margin-top: 25px;
+    }
     .a-round input{
         border-radius: 30px 0 0 0;
         border-right: none;
@@ -605,11 +683,17 @@ hr{
     /* .main-content {
       top: 30%;
     } */
+    .text-dark {
+        right: 45%;
+    }
 }
 @media(max-width:411px){
     /* .main-content {
         bottom: 58%;
     } */
+    .text-dark {
+        right: 45%;
+    }
 }
 @media(max-width:375px){
     .main-content {
@@ -618,7 +702,9 @@ hr{
     .abt-left h5{
         font-size: 15px;
     }
-    .header{height: 280px;}
+    .text-dark {
+        right: 40%;
+    }
 }
 @media(max-width:360px){
     .abt-left h5{
@@ -627,12 +713,17 @@ hr{
     .abt-left h1{
         font-size: 25px;
     }
-    .header{height: 275px;}
+    .text-dark {
+        right: 35%;
+    }
       }
     
 @media(max-width:320px){
     .main-content {
-       top: 60%;
+       top: 58%;
+    }
+    .text-dark {
+        right: 28%;
     }
 }
 @media(min-width:280px) and (max-width:319px){

@@ -69,4 +69,7 @@ $("#hid").click(function(){
 $("#shown").click(function(){
     $("#hideshow").show()
 })
+$(".hide-one").click(function(){
+    $("#hideshow").hide()
+})
 

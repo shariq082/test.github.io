@@ -11,7 +11,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Hello, world!</title>
+    <title>Huntress</title>
   </head>
   <body>
     <div class="top">
@@ -52,7 +52,7 @@
         <div class="a ico">
             <input type="text" placeholder="Search Location"> 
             <div class="rgt-ico">
-                <i class="fas fa-map-marker-alt"></i>
+                <i class="fas fa-crosshairs"></i>
             </div>
         </div>
         <div class="b b-round">
@@ -62,26 +62,32 @@
     </div>
 
      <div class="hideshow" id="hideshow">
+       <div class="hidden"><h5 class="hide-heading">Huntress</h5>
       <div class="hide text-white" id="hid">
         <span>X</span>
       </div>
-        <div class="text-center clr-both">
+    </div>
+    <div class="hide text-white hide-one" id="hid">
+      <span class="fas fa-times"></span>
+    </div>
+        <div class="text-center clr-both hide-small">
           <h1>Huntress</h1>
         </div>
         <div class="hide-content">
           <ul class="hide-left">
             <li>HOME</li>
-            <li>SPECIALISMS</li>
+            <li class="pos-red">SPECIALISMS <i class="fas fa-plus pos-left"></i></li>
             <li>CLIENTS</li>
             <li>CANDIDATES</li>
-            <li>WORK FOR US</li>
+            <li class="pos-red">WORK FOR US <i class="fas fa-plus pos-left"></i></li>
             <li>ABOUT</li>
-            <li>NEWS</li>
+            <li class="pos-red">NEWS <i class="fas fa-plus pos-left"></i></li>
             <li>CONTACT US</li>
           </ul>
           <ul class="hide-right">
-            <li>HOME</li>
-            <li>SPECIALISMS</li>
+            <li class="pos-red">LOG IN <i class="fas fa-chevron-right pos-left"></i></li>
+            <li class="pos-red">CREATE ACCOUNT <i class="fas fa-chevron-right pos-left"></i></li>
+            <li class="red">SEARCH JOB</li>
             <li>
               <div class="hide-form">
                   <div class="a-round">
@@ -90,30 +96,23 @@
                   <div class="b-around">
                       <input type="text" placeholder="Search Location"> 
                       <div class="text-dark">
-                          <i class="fas fa-map-marker-alt"></i>
+                          <i class="fas fa-crosshairs"></i>
                       </div>
                   </div>
-                  <div class="btn-red">
-                      <button>Search Now</button>
-                  </div>
+                
                  </div>
              
             </li>
           
-            <li>NEWS</li>
-            <li>CONTACT US</li>
+            <li>  <div class="btn-red bt-red">
+              <button>Search job</button>
+          </div></li>
+            
           </ul>
          
         </div>
       </div> 
-    </div>
-  
-
-
-     
-<!---------accordian-->
-
-
+    </div>  
      <!--------------about us------>
     <section class="abt py-5">
      <div class="abt-dis container">
@@ -242,7 +241,7 @@
               </div>
             </div>    
           </div>
-      </div>
+        </div>
        </div>
      </div>
     </div>
@@ -401,7 +400,6 @@
           <div class="col-md-3 col-sm-6 col-12 flc">
             <h5>ABOUT US </h5>
             <div class="ft-li">
-              <!-- <h6 class="visibl">Digital Design</h6> -->
              <div class="f-l">
               <ui class="list">
                 <li>Home</li>

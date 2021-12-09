@@ -726,7 +726,7 @@ hr{
         right: 28%;
     }
 }
-@media(min-width:280px) and (max-width:319px){
+@media (max-width:280px){
     .a input,  .b-round button{
         padding: 5px 15px;
     }
@@ -735,5 +735,14 @@ hr{
     }
     .abt-left h5{
         font-size: 10px;
+    }
+    .text-dark {
+        right: 15%;
+    }
+    .bt-red button{
+        width: 50%;
+    }
+    .main-content {
+        top:52%;
     }
 }

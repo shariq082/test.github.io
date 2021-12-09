@@ -62,3 +62,11 @@ $('.play').on('click',function(){
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 })
+//hideshow
+$("#hid").click(function(){
+    $("#hideshow").hide()
+})
+$("#shown").click(function(){
+    $("#hideshow").show()
+})
+
